@@ -1,0 +1,33 @@
+ 
+Algorithme Stor
+variable 
+Tableau ClientsNames(3):chaine de character
+Tableau ClientsAmounts(3):reel
+debut:
+
+pout i<-0 a 2 pas 1 faire
+  ecrire("enter FULLNAME For client number  ",i,".")
+  lire(ClientsNames[i]
+  ecrire("enter number of ARTICLEs for client ",i,".")
+  lire(ArticlesNumber[i])
+
+    TotalArticlesAmount = 0
+   pour j<-0 a 2 pas 1 faire
+      ecrire("enter the price for article number ",i)
+      lire(HT)
+        TotalArticlesAmount = TotalArticlesAmount + HT
+
+    TVA <-TotalArticlesAmount * 15 / 100
+    TTC <- TotalArticlesAmount + TVA 
+    AmountWithDiscount <- TTC - TTC * 2/100
+
+    ClientsAmounts[i]<-AmountWithDiscount
+     
+
+
+ecrire("_______________________________")
+ecrire("        FACTURE")
+ecrire("_______________________________")
+for i in range(3):
+    ecrire("Total amount for client [ ",ClientsNames[i],"] is : ",ClientsAmounts[i])
+
